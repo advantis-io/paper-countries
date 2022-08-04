@@ -1,6 +1,10 @@
-<link rel="import" href="../polymer/polymer.html">
+import '../@polymer/polymer/polymer-legacy.js';
 
-<dom-module id="flag-icons-styles">
+const path = new URL('.', import.meta.url);
+
+const $_documentContainer = document.createElement('template');
+
+$_documentContainer.innerHTML = `<dom-module id="flag-icons-styles">
     <template>
         <custom-style>
             <style is="custom-style">
@@ -21,7 +25,7 @@
                 }
                 
                 .flag-icon:before {
-                    content: "\00a0";
+                    content: "\\00a0";
                 }
                 
                 .flag-icon-ad {
@@ -1046,4 +1050,6 @@
             </style>
         </custom-style>
     </template>
-</dom-module>
+</dom-module>`.replace(/url\(icons\//g, 'url(' + path + 'icons/');
+
+document.head.appendChild($_documentContainer.content);

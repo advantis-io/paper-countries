@@ -1,0 +1,1132 @@
+{
+  "schema_version": "1.0.0",
+  "elements": [
+    {
+      "description": "",
+      "summary": "",
+      "path": "paper-countries.js",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string | null | undefined",
+          "description": "The name of this element.",
+          "privacy": "public",
+          "sourceRange": {
+            "file": "../@polymer/iron-form-element-behavior/iron-form-element-behavior.js",
+            "start": {
+              "line": 26,
+              "column": 4
+            },
+            "end": {
+              "line": 26,
+              "column": 24
+            }
+          },
+          "metadata": {
+            "polymer": {
+              "attributeType": "String"
+            }
+          },
+          "inheritedFrom": "IronFormElementBehavior"
+        },
+        {
+          "name": "value",
+          "type": "string | null | undefined",
+          "description": "Paper-countries input value.",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 164,
+              "column": 4
+            },
+            "end": {
+              "line": 167,
+              "column": 5
+            }
+          },
+          "metadata": {
+            "polymer": {
+              "notify": true,
+              "attributeType": "String"
+            }
+          }
+        },
+        {
+          "name": "required",
+          "type": "boolean | null | undefined",
+          "description": "Set to true to mark the paper-countries as required.",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 139,
+              "column": 4
+            },
+            "end": {
+              "line": 142,
+              "column": 5
+            }
+          },
+          "metadata": {
+            "polymer": {
+              "attributeType": "Boolean"
+            }
+          },
+          "defaultValue": "false"
+        },
+        {
+          "name": "label",
+          "type": "string | null | undefined",
+          "description": "The label for paper-countries",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 131,
+              "column": 4
+            },
+            "end": {
+              "line": 134,
+              "column": 5
+            }
+          },
+          "metadata": {
+            "polymer": {
+              "attributeType": "String"
+            }
+          },
+          "defaultValue": "\"Country\""
+        },
+        {
+          "name": "placeholder",
+          "type": "string | null | undefined",
+          "description": "A placeholder string in addition to the label which is shown in\npaper-countries input field like default value",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 148,
+              "column": 4
+            },
+            "end": {
+              "line": 151,
+              "column": 5
+            }
+          },
+          "metadata": {
+            "polymer": {
+              "attributeType": "String"
+            }
+          },
+          "defaultValue": "\"Please enter country name\""
+        },
+        {
+          "name": "maxSuggestions",
+          "type": "number | null | undefined",
+          "description": "Maximum number of suggestions to show as dropdown list.",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 156,
+              "column": 4
+            },
+            "end": {
+              "line": 159,
+              "column": 5
+            }
+          },
+          "metadata": {
+            "polymer": {
+              "attributeType": "Number"
+            }
+          },
+          "defaultValue": "5"
+        },
+        {
+          "name": "alwaysFloatLabel",
+          "type": "boolean | null | undefined",
+          "description": "Set to true to always float the label on paper-countries.",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 172,
+              "column": 4
+            },
+            "end": {
+              "line": 175,
+              "column": 5
+            }
+          },
+          "metadata": {
+            "polymer": {
+              "attributeType": "Boolean"
+            }
+          },
+          "defaultValue": "false"
+        },
+        {
+          "name": "autofocus",
+          "type": "boolean | null | undefined",
+          "description": "Bind this to the <paper-input>'s autofocus property.",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 180,
+              "column": 4
+            },
+            "end": {
+              "line": 183,
+              "column": 5
+            }
+          },
+          "metadata": {
+            "polymer": {
+              "attributeType": "Boolean"
+            }
+          },
+          "defaultValue": "false"
+        },
+        {
+          "name": "disabled",
+          "type": "boolean | null | undefined",
+          "description": "Set to true to disable paper-countries.",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 188,
+              "column": 4
+            },
+            "end": {
+              "line": 191,
+              "column": 5
+            }
+          },
+          "metadata": {
+            "polymer": {
+              "attributeType": "Boolean"
+            }
+          },
+          "defaultValue": "false"
+        },
+        {
+          "name": "errorMessage",
+          "type": "string | null | undefined",
+          "description": "The error message to display when the input is invalid.",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 195,
+              "column": 4
+            },
+            "end": {
+              "line": 197,
+              "column": 5
+            }
+          },
+          "metadata": {
+            "polymer": {
+              "attributeType": "String"
+            }
+          }
+        },
+        {
+          "name": "noLabelFloat",
+          "type": "boolean | null | undefined",
+          "description": "Set to true to disable the floating label.",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 201,
+              "column": 4
+            },
+            "end": {
+              "line": 204,
+              "column": 5
+            }
+          },
+          "metadata": {
+            "polymer": {
+              "attributeType": "Boolean"
+            }
+          },
+          "defaultValue": "false"
+        },
+        {
+          "name": "readonly",
+          "type": "boolean | null | undefined",
+          "description": "Set to true to set paper-countries in readonly mode",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 208,
+              "column": 4
+            },
+            "end": {
+              "line": 211,
+              "column": 5
+            }
+          },
+          "metadata": {
+            "polymer": {
+              "attributeType": "Boolean"
+            }
+          },
+          "defaultValue": "false"
+        },
+        {
+          "name": "autoValidate",
+          "type": "boolean | null | undefined",
+          "description": "Set to true to auto-validate the input value.",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 215,
+              "column": 4
+            },
+            "end": {
+              "line": 218,
+              "column": 5
+            }
+          },
+          "metadata": {
+            "polymer": {
+              "attributeType": "Boolean"
+            }
+          },
+          "defaultValue": "false"
+        },
+        {
+          "name": "country",
+          "type": "Object | null | undefined",
+          "description": "Property which hold country object with name and country flag",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 222,
+              "column": 4
+            },
+            "end": {
+              "line": 226,
+              "column": 5
+            }
+          },
+          "metadata": {
+            "polymer": {
+              "notify": true,
+              "observer": "\"_countryChange\"",
+              "attributeType": "Object"
+            }
+          }
+        },
+        {
+          "name": "_prefetchedCandidates",
+          "type": "Array | null | undefined",
+          "description": "The prefetched candidates hold all countries",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 230,
+              "column": 4
+            },
+            "end": {
+              "line": 233,
+              "column": 5
+            }
+          },
+          "metadata": {
+            "polymer": {
+              "attributeType": "Array"
+            }
+          }
+        },
+        {
+          "name": "_suggestions",
+          "type": "Array | null | undefined",
+          "description": "Internal variable holding all matched suggestions.",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 237,
+              "column": 4
+            },
+            "end": {
+              "line": 240,
+              "column": 5
+            }
+          },
+          "metadata": {
+            "polymer": {
+              "attributeType": "Array"
+            }
+          },
+          "defaultValue": "[]"
+        },
+        {
+          "name": "_displayProp",
+          "type": "string | null | undefined",
+          "description": "The property in json object that should be chosen for the paper-input\nvalue when an element is selected from the suggestions.",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 246,
+              "column": 4
+            },
+            "end": {
+              "line": 249,
+              "column": 5
+            }
+          },
+          "metadata": {
+            "polymer": {
+              "attributeType": "String"
+            }
+          },
+          "defaultValue": "\"name\""
+        },
+        {
+          "name": "_selected",
+          "type": "boolean | null | undefined",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 251,
+              "column": 5
+            },
+            "end": {
+              "line": 254,
+              "column": 5
+            }
+          },
+          "metadata": {
+            "polymer": {
+              "attributeType": "Boolean"
+            }
+          },
+          "defaultValue": "false"
+        }
+      ],
+      "methods": [
+        {
+          "name": "attached",
+          "description": "Empty implementations for backcompatibility.",
+          "privacy": "protected",
+          "sourceRange": {
+            "file": "../@polymer/iron-form-element-behavior/iron-form-element-behavior.js",
+            "start": {
+              "line": 46,
+              "column": 2
+            },
+            "end": {
+              "line": 46,
+              "column": 25
+            }
+          },
+          "metadata": {},
+          "params": [],
+          "return": {
+            "type": "void"
+          },
+          "inheritedFrom": "IronFormElementBehavior"
+        },
+        {
+          "name": "detached",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "file": "../@polymer/iron-form-element-behavior/iron-form-element-behavior.js",
+            "start": {
+              "line": 47,
+              "column": 2
+            },
+            "end": {
+              "line": 47,
+              "column": 25
+            }
+          },
+          "metadata": {},
+          "params": [],
+          "return": {
+            "type": "void"
+          },
+          "inheritedFrom": "IronFormElementBehavior"
+        },
+        {
+          "name": "focus",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 261,
+              "column": 2
+            },
+            "end": {
+              "line": 263,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [],
+          "return": {
+            "type": "void"
+          }
+        },
+        {
+          "name": "_getAutoDisplay",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 265,
+              "column": 2
+            },
+            "end": {
+              "line": 273,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "_suggestion"
+            }
+          ]
+        },
+        {
+          "name": "_getClasses",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 275,
+              "column": 2
+            },
+            "end": {
+              "line": 282,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "noLabelFloat"
+            }
+          ]
+        },
+        {
+          "name": "_keydown",
+          "description": "Callback for keydown event",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 288,
+              "column": 2
+            },
+            "end": {
+              "line": 305,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "e",
+              "type": "Event"
+            }
+          ],
+          "return": {
+            "type": "void"
+          }
+        },
+        {
+          "name": "_getKeyCode",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 307,
+              "column": 2
+            },
+            "end": {
+              "line": 309,
+              "column": 48
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "e"
+            }
+          ]
+        },
+        {
+          "name": "_keyup",
+          "description": "Callback for keyup event",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 316,
+              "column": 2
+            },
+            "end": {
+              "line": 343,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "e",
+              "type": "Event"
+            }
+          ],
+          "return": {
+            "type": "void"
+          }
+        },
+        {
+          "name": "_mouseMoveAction",
+          "description": "Callback on mouseover event on paper-item",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 349,
+              "column": 2
+            },
+            "end": {
+              "line": 357,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "e",
+              "type": "Event"
+            }
+          ],
+          "return": {
+            "type": "void"
+          }
+        },
+        {
+          "name": "_upButtonAction",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 359,
+              "column": 2
+            },
+            "end": {
+              "line": 368,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "menuList"
+            },
+            {
+              "name": "inputElement"
+            }
+          ],
+          "return": {
+            "type": "void"
+          }
+        },
+        {
+          "name": "_downButtonAction",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 370,
+              "column": 2
+            },
+            "end": {
+              "line": 379,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "menuList"
+            },
+            {
+              "name": "inputElement"
+            }
+          ],
+          "return": {
+            "type": "void"
+          }
+        },
+        {
+          "name": "_selectItem",
+          "description": "Callback for click event on paper-item which hold suggestions for query",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 385,
+              "column": 2
+            },
+            "end": {
+              "line": 392,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "e",
+              "type": "Event"
+            }
+          ],
+          "return": {
+            "type": "void"
+          }
+        },
+        {
+          "name": "_getDisplayValue",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 394,
+              "column": 2
+            },
+            "end": {
+              "line": 396,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "item"
+            }
+          ]
+        },
+        {
+          "name": "_getCountryCode",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 398,
+              "column": 2
+            },
+            "end": {
+              "line": 400,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "countryCode"
+            }
+          ]
+        },
+        {
+          "name": "_searchCountries",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 402,
+              "column": 2
+            },
+            "end": {
+              "line": 426,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "query"
+            }
+          ],
+          "return": {
+            "type": "void"
+          }
+        },
+        {
+          "name": "_countryChange",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 428,
+              "column": 2
+            },
+            "end": {
+              "line": 434,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "country"
+            }
+          ],
+          "return": {
+            "type": "void"
+          }
+        },
+        {
+          "name": "_setSelectedItem",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 436,
+              "column": 2
+            },
+            "end": {
+              "line": 446,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "selectedItem"
+            },
+            {
+              "name": "suggestionsMenu"
+            }
+          ],
+          "return": {
+            "type": "void"
+          }
+        },
+        {
+          "name": "_autoselect",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 448,
+              "column": 2
+            },
+            "end": {
+              "line": 476,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "e"
+            }
+          ],
+          "return": {
+            "type": "void"
+          }
+        },
+        {
+          "name": "_updateSuggestion",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 478,
+              "column": 2
+            },
+            "end": {
+              "line": 493,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": []
+        },
+        {
+          "name": "reset",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 495,
+              "column": 2
+            },
+            "end": {
+              "line": 501,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [],
+          "return": {
+            "type": "void"
+          }
+        }
+      ],
+      "staticMethods": [],
+      "demos": [],
+      "metadata": {},
+      "sourceRange": {
+        "start": {
+          "line": 35,
+          "column": 8
+        },
+        "end": {
+          "line": 502,
+          "column": 1
+        }
+      },
+      "privacy": "public",
+      "superclass": "HTMLElement",
+      "attributes": [
+        {
+          "name": "name",
+          "description": "The name of this element.",
+          "sourceRange": {
+            "file": "../@polymer/iron-form-element-behavior/iron-form-element-behavior.js",
+            "start": {
+              "line": 26,
+              "column": 4
+            },
+            "end": {
+              "line": 26,
+              "column": 24
+            }
+          },
+          "metadata": {},
+          "type": "string | null | undefined",
+          "inheritedFrom": "IronFormElementBehavior"
+        },
+        {
+          "name": "value",
+          "description": "Paper-countries input value.",
+          "sourceRange": {
+            "start": {
+              "line": 164,
+              "column": 4
+            },
+            "end": {
+              "line": 167,
+              "column": 5
+            }
+          },
+          "metadata": {},
+          "type": "string | null | undefined"
+        },
+        {
+          "name": "required",
+          "description": "Set to true to mark the paper-countries as required.",
+          "sourceRange": {
+            "start": {
+              "line": 139,
+              "column": 4
+            },
+            "end": {
+              "line": 142,
+              "column": 5
+            }
+          },
+          "metadata": {},
+          "type": "boolean | null | undefined"
+        },
+        {
+          "name": "label",
+          "description": "The label for paper-countries",
+          "sourceRange": {
+            "start": {
+              "line": 131,
+              "column": 4
+            },
+            "end": {
+              "line": 134,
+              "column": 5
+            }
+          },
+          "metadata": {},
+          "type": "string | null | undefined"
+        },
+        {
+          "name": "placeholder",
+          "description": "A placeholder string in addition to the label which is shown in\npaper-countries input field like default value",
+          "sourceRange": {
+            "start": {
+              "line": 148,
+              "column": 4
+            },
+            "end": {
+              "line": 151,
+              "column": 5
+            }
+          },
+          "metadata": {},
+          "type": "string | null | undefined"
+        },
+        {
+          "name": "max-suggestions",
+          "description": "Maximum number of suggestions to show as dropdown list.",
+          "sourceRange": {
+            "start": {
+              "line": 156,
+              "column": 4
+            },
+            "end": {
+              "line": 159,
+              "column": 5
+            }
+          },
+          "metadata": {},
+          "type": "number | null | undefined"
+        },
+        {
+          "name": "always-float-label",
+          "description": "Set to true to always float the label on paper-countries.",
+          "sourceRange": {
+            "start": {
+              "line": 172,
+              "column": 4
+            },
+            "end": {
+              "line": 175,
+              "column": 5
+            }
+          },
+          "metadata": {},
+          "type": "boolean | null | undefined"
+        },
+        {
+          "name": "autofocus",
+          "description": "Bind this to the <paper-input>'s autofocus property.",
+          "sourceRange": {
+            "start": {
+              "line": 180,
+              "column": 4
+            },
+            "end": {
+              "line": 183,
+              "column": 5
+            }
+          },
+          "metadata": {},
+          "type": "boolean | null | undefined"
+        },
+        {
+          "name": "disabled",
+          "description": "Set to true to disable paper-countries.",
+          "sourceRange": {
+            "start": {
+              "line": 188,
+              "column": 4
+            },
+            "end": {
+              "line": 191,
+              "column": 5
+            }
+          },
+          "metadata": {},
+          "type": "boolean | null | undefined"
+        },
+        {
+          "name": "error-message",
+          "description": "The error message to display when the input is invalid.",
+          "sourceRange": {
+            "start": {
+              "line": 195,
+              "column": 4
+            },
+            "end": {
+              "line": 197,
+              "column": 5
+            }
+          },
+          "metadata": {},
+          "type": "string | null | undefined"
+        },
+        {
+          "name": "no-label-float",
+          "description": "Set to true to disable the floating label.",
+          "sourceRange": {
+            "start": {
+              "line": 201,
+              "column": 4
+            },
+            "end": {
+              "line": 204,
+              "column": 5
+            }
+          },
+          "metadata": {},
+          "type": "boolean | null | undefined"
+        },
+        {
+          "name": "readonly",
+          "description": "Set to true to set paper-countries in readonly mode",
+          "sourceRange": {
+            "start": {
+              "line": 208,
+              "column": 4
+            },
+            "end": {
+              "line": 211,
+              "column": 5
+            }
+          },
+          "metadata": {},
+          "type": "boolean | null | undefined"
+        },
+        {
+          "name": "auto-validate",
+          "description": "Set to true to auto-validate the input value.",
+          "sourceRange": {
+            "start": {
+              "line": 215,
+              "column": 4
+            },
+            "end": {
+              "line": 218,
+              "column": 5
+            }
+          },
+          "metadata": {},
+          "type": "boolean | null | undefined"
+        },
+        {
+          "name": "country",
+          "description": "Property which hold country object with name and country flag",
+          "sourceRange": {
+            "start": {
+              "line": 222,
+              "column": 4
+            },
+            "end": {
+              "line": 226,
+              "column": 5
+            }
+          },
+          "metadata": {},
+          "type": "Object | null | undefined"
+        }
+      ],
+      "events": [
+        {
+          "type": "CustomEvent",
+          "name": "value-changed",
+          "description": "Fired when the `value` property changes.",
+          "metadata": {}
+        },
+        {
+          "type": "CustomEvent",
+          "name": "country-changed",
+          "description": "Fired when the `country` property changes.",
+          "metadata": {}
+        }
+      ],
+      "styling": {
+        "cssVariables": [],
+        "selectors": []
+      },
+      "slots": [],
+      "tagname": "paper-countries"
+    }
+  ]
+}

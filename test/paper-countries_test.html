@@ -6,10 +6,10 @@
 
     <title>paper-countries test</title>
 
-    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
-    <script src="../../web-component-tester/browser.js"></script>
-    <script src="../../iron-test-helpers/mock-interactions.js"></script>
-    <link rel="import" href="../paper-countries.html">
+    <script src="../../@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
+    <script src="../../wct-browser-legacy/browser.js"></script>
+    <script src="../../@polymer/iron-test-helpers/mock-interactions.js" type="module"></script>
+    <script type="module" src="../paper-countries.js"></script>
   </head>
   <body>
 
@@ -31,86 +31,87 @@
       </template>
     </test-fixture>
 
-    <script>
-    /* global suite fixture test setup assert MockInteractions flush */
-      suite('paper-countries properties', function() {
-        let element;
+    <script type="module">
+import '../paper-countries.js';
+/* global suite fixture test setup assert MockInteractions flush */
+suite('paper-countries properties', function() {
+  let element;
 
-        setup(() => {
-          element = fixture('basic');
-        });
+  setup(() => {
+    element = fixture('basic');
+  });
 
-        test('instantiating the element works', function() {
-          assert.equal(element.is, 'paper-countries');
-        });
+  test('instantiating the element works', function() {
+    assert.equal(element.is, 'paper-countries');
+  });
 
-        test('get default label attribute', function() {
-          assert.isString(element.label);
-          assert.equal(element.label, 'Country');
-        });
+  test('get default label attribute', function() {
+    assert.isString(element.label);
+    assert.equal(element.label, 'Country');
+  });
 
-        test('get default required attribute', function() {
-          assert.isBoolean(element.required);
-          assert.deepEqual(element.required, false);
-        });
+  test('get default required attribute', function() {
+    assert.isBoolean(element.required);
+    assert.deepEqual(element.required, false);
+  });
 
-        test('get default max-suggestions', function() {
-          assert.isNumber(element.maxSuggestions);
-          assert.deepEqual(element.maxSuggestions, 5);
+  test('get default max-suggestions', function() {
+    assert.isNumber(element.maxSuggestions);
+    assert.deepEqual(element.maxSuggestions, 5);
+  });
+});
+
+suite('bound properties', function() {
+  let dataBinding;
+  let bound;
+
+  setup(() => {
+    dataBinding = fixture('dataBinding');
+    bound = {'name': 'India', 'code': 'in'};
+  });
+
+  test('bind to country', function() {
+    assert.isObject(dataBinding.country);
+    assert.deepEqual(dataBinding.country, bound);
+    assert.equal(dataBinding.$.input.value, bound.name);
+    var backgroundImage = dataBinding.$.inputIcon.style.backgroundImage;
+    assert.isAbove(backgroundImage.split('.svg').length, 0);
+  });
+});
+
+suite('testing binding and suggestions', function() {
+  var advancedModeFixture;
+
+  setup(function() {
+    advancedModeFixture = fixture('advanced');
+  });
+
+  test('get 0 suggestions by entering `abcd` to input field', function(done) {
+      var dropdownInput = advancedModeFixture.$.input;
+      dropdownInput.value = 'abcd';
+      dropdownInput.addEventListener('keyup', function() {
+          assert.isArray(advancedModeFixture._suggestions);
+          assert.equal(advancedModeFixture._suggestions.length, 0);
+          done();
+      });
+      MockInteractions.focus(dropdownInput);
+      MockInteractions.pressAndReleaseKeyOn(dropdownInput, '65');
+    });
+
+    test('get 5 suggestions by entering `a` to input field', function(done) {
+      var dropdownInput = advancedModeFixture.$.input;
+          dropdownInput.set('value', 'a');
+      MockInteractions.focus(dropdownInput);
+      MockInteractions.pressAndReleaseKeyOn(dropdownInput, '65');
+        dropdownInput.addEventListener('keyup', () => {
+        flush(() => {
+          assert.isArray(advancedModeFixture._suggestions);
+          assert.equal(advancedModeFixture._suggestions.length, 5);
+          done();
         });
       });
-
-      suite('bound properties', function() {
-        let dataBinding;
-        let bound;
-
-        setup(() => {
-          dataBinding = fixture('dataBinding');
-          bound = {'name': 'India', 'code': 'in'};
-        });
-
-        test('bind to country', function() {
-          assert.isObject(dataBinding.country);
-          assert.deepEqual(dataBinding.country, bound);
-          assert.equal(dataBinding.$.input.value, bound.name);
-          var backgroundImage = dataBinding.$.inputIcon.style.backgroundImage;
-          assert.isAbove(backgroundImage.split('.svg').length, 0);
-        });
-      });
-
-      suite('testing binding and suggestions', function() {
-        var advancedModeFixture;
-
-        setup(function() {
-          advancedModeFixture = fixture('advanced');
-        });
-
-        test('get 0 suggestions by entering `abcd` to input field', function(done) {
-            var dropdownInput = advancedModeFixture.$.input;
-            dropdownInput.value = 'abcd';
-            dropdownInput.addEventListener('keyup', function() {
-                assert.isArray(advancedModeFixture._suggestions);
-                assert.equal(advancedModeFixture._suggestions.length, 0);
-                done();
-            });
-            MockInteractions.focus(dropdownInput);
-            MockInteractions.pressAndReleaseKeyOn(dropdownInput, '65');
-          });
-
-          test('get 5 suggestions by entering `a` to input field', function(done) {
-            var dropdownInput = advancedModeFixture.$.input;
-                dropdownInput.set('value', 'a');
-            MockInteractions.focus(dropdownInput);
-            MockInteractions.pressAndReleaseKeyOn(dropdownInput, '65');
-              dropdownInput.addEventListener('keyup', () => {
-              flush(() => {
-                assert.isArray(advancedModeFixture._suggestions);
-                assert.equal(advancedModeFixture._suggestions.length, 5);
-                done();
-              });
-            });
-          });
-      });
-    </script>
+    });
+});
+</script>
   </body>
 </html>
